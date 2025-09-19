@@ -1,62 +1,80 @@
-📌 Project Overview
+ Project Overview
 
-This mini project focuses on analyzing an online bookstore database using SQL. The goal is to explore tables such as Books, Customers, and Orders to extract insights about book inventory, customer behavior, orders, and revenue. Through a series of queries (basic to advanced), the project demonstrates how SQL can be used to answer real-world business questions.
+This project demonstrates how SQL can be used to analyze an online bookstore database. By writing queries of increasing complexity, the project provides insights into:
+
+📦 Book Inventory – stock levels, most/least popular books, genre distribution
+
+🛒 Customer Behavior – purchasing trends, top spenders, customer locations
+
+💰 Sales & Revenue – total revenue, revenue by genre, order trends over time
+
+The project simulates real-world business questions faced by e-commerce and retail platforms, showing how SQL can help decision-making.
 
 🗂 Dataset
 
-The dataset contains three main tables:
+The database consists of 3 core tables:
 
-Books → book details such as title, author, genre, price, and stock
+Books
 
-Customers → customer details such as name, city, and country
+Book_ID, Title, Author, Genre, Price, Stock
 
-Orders → order details such as quantity, order date, and book purchased
+Contains details about the bookstore’s inventory
 
+Customers
 
-🎯 Learning Objectives
+Customer_ID, Name, City, Country
 
-Understand SQL fundamentals: SELECT, WHERE, ORDER BY, LIMIT
+Stores customer information and demographics
 
-Explore relationships using JOIN, GROUP BY, and HAVING
+Orders
 
-Apply aggregation functions (SUM, COUNT, AVG, MAX, MIN)
+Order_ID, Book_ID, Customer_ID, Quantity, Order_Date
 
-Solve real-world business problems like tracking sales, customer spending, and stock levels
+Tracks customer purchases and order details
 
-Optimize queries for better readability and efficiency
+📌 Dataset Link
+
+🎯 Objectives of the Project
+
+Strengthen SQL skills through hands-on queries.
+
+Practice solving business-related questions with SQL.
+
+Learn to optimize queries for readability and performance.
+
+Bridge the gap between raw data and business insights.
 
 📝 Project Tasks
-
 🔹 Basic Queries
 
 Retrieve all books in a specific genre (e.g., Fiction).
 
-Find books published after 1950.
+Find books published after a certain year.
 
-List all customers from Canada.
+List all customers from a specific country.
 
-Show orders placed in a given month.
+Show orders placed in November 2023.
 
-Find the most expensive and least stocked books.
+Find the most expensive book and the book with the lowest stock.
 
 🔹 Intermediate Queries
 
-Calculate the total number of books sold by genre.
+Retrieve the total number of books sold by each genre.
 
-Find the average price of Fantasy books.
+Calculate the average price of books in the Fantasy genre.
 
-List customers with at least 2 orders.
+List customers who have placed at least 2 orders.
 
-Identify the most frequently ordered book.
+Find the most frequently ordered book.
 
-Display the top 3 most expensive books in the Fantasy genre.
+Show the top 3 most expensive Fantasy books.
 
 🔹 Advanced Queries
 
-Calculate the total quantity of books sold per author.
+Calculate total quantity of books sold per author.
 
-List cities of customers who spent more than $30.
+List the cities of customers who spent more than $30.
 
-Find the customer who spent the most overall.
+Identify the customer who spent the most overall.
 
-Update inventory to calculate remaining stock after sales.
+Calculate remaining stock after fulfilling all orders.
