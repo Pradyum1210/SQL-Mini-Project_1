@@ -12,7 +12,6 @@ Customers → customer details such as name, city, and country
 
 Orders → order details such as quantity, order date, and book purchased
 
-🔗 Dataset Link
 
 🎯 Learning Objectives
 
@@ -27,6 +26,7 @@ Solve real-world business problems like tracking sales, customer spending, and s
 Optimize queries for better readability and efficiency
 
 📝 Project Tasks
+
 🔹 Basic Queries
 
 Retrieve all books in a specific genre (e.g., Fiction).
