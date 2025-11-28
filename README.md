@@ -1,80 +1,90 @@
- Project Overview
+# 📚 Online Bookstore SQL Analysis  
+### 🧠 End-to-End Database Exploration Using SQL
 
-This project demonstrates how SQL can be used to analyze an online bookstore database. By writing queries of increasing complexity, the project provides insights into:
+## 1️⃣ Project Overview
 
-📦 Book Inventory – stock levels, most/least popular books, genre distribution
+This project demonstrates how **SQL** can be used to analyze an **online bookstore database**.  
+By writing queries ranging from basic to advanced, the project provides insights into:
 
-🛒 Customer Behavior – purchasing trends, top spenders, customer locations
+- 📦 **Book Inventory** – stock levels, genres, most/least popular books  
+- 🛒 **Customer Behavior** – purchasing trends, top spenders, customer demographics  
+- 💰 **Sales & Revenue** – total sales, genre-wise revenue, order trends over time  
 
-💰 Sales & Revenue – total revenue, revenue by genre, order trends over time
+The project simulates **real-world e-commerce analytics**, showing how SQL helps in operational decisions and business insights.
 
-The project simulates real-world business questions faced by e-commerce and retail platforms, showing how SQL can help decision-making.
+---
 
-🗂 Dataset
+## 2️⃣ Database Structure 🗂
 
-The database consists of 3 core tables:
+The database consists of **3 core tables**:
 
-Books
+### 📘 Books Table
+| Column | Description |
+|--------|-------------|
+| `Book_ID` | Unique ID for each book |
+| `Title` | Name of the book |
+| `Author` | Book author |
+| `Genre` | Book category |
+| `Price` | Selling price |
+| `Stock` | Available quantity |
 
-Book_ID, Title, Author, Genre, Price, Stock
+### 🧑‍🤝‍🧑 Customers Table
+| Column | Description |
+|--------|-------------|
+| `Customer_ID` | Unique customer identifier |
+| `Name` | Customer's full name |
+| `City` | Customer’s city |
+| `Country` | Country of residence |
 
-Contains details about the bookstore’s inventory
+### 🛒 Orders Table
+| Column | Description |
+|--------|-------------|
+| `Order_ID` | Unique order number |
+| `Book_ID` | Book purchased |
+| `Customer_ID` | Buyer information |
+| `Quantity` | Number of copies ordered |
+| `Order_Date` | Purchase date |
 
-Customers
+---
 
-Customer_ID, Name, City, Country
+## 3️⃣ 📌 Dataset Link  
+(Add your dataset or SQL file link here)
 
-Stores customer information and demographics
+---
 
-Orders
+## 4️⃣ 🎯 Objectives of the Project
 
-Order_ID, Book_ID, Customer_ID, Quantity, Order_Date
+✔ Strengthen SQL skills through practical queries  
+✔ Answer business-focused questions using SQL logic  
+✔ Learn efficient query writing and optimization  
+✔ Convert raw transactional data into meaningful insights  
 
-Tracks customer purchases and order details
+---
 
-📌 Dataset Link
+## 5️⃣ 📝 Project Tasks & SQL Concepts Used
 
-🎯 Objectives of the Project
+### 🔹 **Basic Queries**
+- Retrieve all books from a specific genre (e.g., *Fiction*)
+- List books published after a certain year  
+- Show all customers from a given country  
+- Display orders placed in *November 2023*  
+- Find:
+  - Most expensive book  
+  - Book with lowest stock  
 
-Strengthen SQL skills through hands-on queries.
+---
 
-Practice solving business-related questions with SQL.
+### 🔹 **Intermediate Queries**
+- Total number of books sold per **genre**  
+- Average price of **Fantasy** books  
+- Customers who placed at least **2 orders**  
+- Most frequently ordered book  
+- Top **3 most expensive books** in the Fantasy category  
 
-Learn to optimize queries for readability and performance.
+---
 
-Bridge the gap between raw data and business insights.
-
-📝 Project Tasks
-🔹 Basic Queries
-
-Retrieve all books in a specific genre (e.g., Fiction).
-
-Find books published after a certain year.
-
-List all customers from a specific country.
-
-Show orders placed in November 2023.
-
-Find the most expensive book and the book with the lowest stock.
-
-🔹 Intermediate Queries
-
-Retrieve the total number of books sold by each genre.
-
-Calculate the average price of books in the Fantasy genre.
-
-List customers who have placed at least 2 orders.
-
-Find the most frequently ordered book.
-
-Show the top 3 most expensive Fantasy books.
-
-🔹 Advanced Queries
-
-Calculate total quantity of books sold per author.
-
-List the cities of customers who spent more than $30.
-
-Identify the customer who spent the most overall.
-
-Calculate remaining stock after fulfilling all orders.
+### 🔹 **Advanced Queries**  
+- Total books sold per **author**  
+- Cities of customers who spent **more than $30**  
+- Identify the **top-spending customer** overall  
+- Calculate **remaining stock**
